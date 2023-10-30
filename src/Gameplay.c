@@ -247,20 +247,20 @@ void DrawGameplayScreen(GsOT *ot)
 			{
 				case LEVEL1:
 				{
-					if (key.picked == 0 && currentRoom == 2)
-						RenderObject(key.worldPosition, key.rotation, &Object[1], ot);
+					//if (key.picked == 0 && currentRoom == 2)
+						//RenderObject(key.worldPosition, key.rotation, &Object[1], ot);
 					
 					if (currentRoom == 1)	
 					{
-						RenderObject(level2Door.worldPosition, key.rotation, &Object[1], ot);
-						RenderObject(boxMedalion.worldPosition, key.rotation, &Object[1], ot);
+						//RenderObject(level2Door.worldPosition, key.rotation, &Object[1], ot);
+						//RenderObject(boxMedalion.worldPosition, key.rotation, &Object[1], ot);
 					}
 					break;
 				}
 				case LEVEL2:
 				{
-					if (medallionRight.picked == 0)
-						RenderObject(medallionRight.worldPosition, medallionRight.rotation, &Object[1], ot);
+					//if (medallionRight.picked == 0)
+						//RenderObject(medallionRight.worldPosition, medallionRight.rotation, &Object[1], ot);
 					
 					break;
 				}

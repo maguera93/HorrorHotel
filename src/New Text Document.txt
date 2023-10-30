@@ -1,0 +1,55 @@
+#include "Gameplay.h"
+
+VECTOR doorRoom1;
+
+RoomObject lvl2Room;
+
+GsIMAGE lvl2Image;
+
+void InitKey(void);
+void AddKey(void);
+
+void InitLevel2()
+{
+	//Start reading the CD
+	cd_open();
+	
+	cd_read_file("ROOM03.TIM", &cdData[8]);
+		
+	//Stop reading the CD
+	cd_close();
+	
+	LoadTIM(&lvl2Image, cdData[8]);
+		/*Init Room*/
+			//-3500 4000
+		// -2000 3500
+		
+	doorRoom1.vx = -5000;
+	doorRoom1.vy = 0;
+	doorRoom1.vz = 1500;
+		
+		
+	currentBoundaries.x = -5000; 
+	currentBoundaries.xIn = 4000; 
+	currentBoundaries.z = -4000; 
+	currentBoundaries.zIn = 3500; 
+	
+	currentCameraPos.vx = 2000;
+	currentCameraPos.vy = 3000;
+	currentCameraPos.vz = 5000;
+
+	currentCameraRot.vx = 200;
+	currentCameraRot.vy = -200;
+	currentCameraRot.vz = 0;
+	
+	InitRoom(currentBoundaries, currentCameraPos, currentCameraRot, &lvl2Image, &lvl2Room);
+	
+	ChangeRoom(&lvl2Room);
+	
+	gameLevel = LEVEL2;
+}
+
+void UpdateLevel2()
+{
+	
+}

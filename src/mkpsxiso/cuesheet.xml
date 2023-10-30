@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<iso_project image_name="game.bin" cue_sheet="game.cue" no_xa="1">
+	<track type="data">
+		<license file="LICENSEA.DAT"/>
+		<directory_tree>
+			<file name="SYSTEM.CNF"	type="data"	source="SYSTEM.CNF"/>
+			<file name="MAIN.EXE"	type="data"	source="MAIN.EXE"/>
+			<!-- Add your own files or folders here -->
+			<file name="LOGO.TIM"	type="data"	source="DATA/LOGO.TIM"/>
+			<file name="CHICA.TMD"	type="data"	source="DATA/WALK01.TMD"/>
+			<file name="CUBE.TMD"	type="data"	source="DATA/CUBE.TMD"/>
+			<file name="CHICA.TIM"	type="data"	source="DATA/CHICA.TIM"/>
+			<file name="BLACK.TIM"	type="data"	source="DATA/BLACK.TIM"/>
+			<file name="TEX03.TIM"	type="data"	source="DATA/15.TIM"/>
+			<file name="GRID.TMD"	type="data"	source="DATA/GRID.TMD"/>
+			<file name="ATLAS.TIM"	type="data"	source="DATA/ATLAS.TIM"/>
+			<file name="ROOM01.TIM"	type="data"	source="DATA/ROOM01.TIM"/>
+			<file name="ROOM02.TIM"	type="data"	source="DATA/ROOM02.TIM"/>
+			<file name="ROOM03.TIM"	type="data"	source="DATA/ROOM03.TIM"/>
+			<file name="DIALOGUE.TIM"	type="data"	source="DATA/dialog.tim"/>
+			<file name="WALK01.VDF"	type="data"	source="DATA/WALK01.VDF"/>
+			<file name="LOGOS.VAG"	type="data"	source="DATA/LogoS.VAG"/>
+			<dummy sectors="1024"/>
+		</directory_tree>
+	</track>
+	<track type="audio" source="DATA/horror ambient.wav"/>
+	<track type="audio" source="DATA/logo_cd.wav"/>
+</iso_project>
